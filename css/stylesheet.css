@@ -1,0 +1,113 @@
+body {
+  background-color: white;
+}
+
+.navbar.navbar-expand-lg.navbar-white.bg-white {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 0 0 0;
+  z-index: 9999;
+}
+
+.spacer {
+    width: 100%;
+    margin-top: 65px;
+}
+
+.navbar-brand {
+  float: left;
+  color: black;
+  font-size: 10px;
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  padding: 25px 0 25px 0;
+  margin: 15 0 0 230px;
+  max-width: 49%;
+}
+
+#navbarSupportedContent a {
+  color: grey;
+  font-size: 10px;
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin: 30 10 10 35px;
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+div#wrapper {
+  -webkit-column-count: 3;
+  width: 1215px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-family: helvetica;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+div#reel {
+  -webkit-column-count: 1;
+  width: 1215px;
+  margin: 0 auto;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
